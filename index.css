@@ -1,8 +1,13 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 2px;
+    padding: 2px;
 }
 
 body{
-    background-color: #2c2f33;
+    background-image: url("images/komi_bg.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-interpolation-mode: bicubic;
+    background-attachment:fixed;
 }
