@@ -12,7 +12,12 @@ body{
     background-attachment:fixed;
 }
 
-.credits a{
+.btn{
+    background-color: #7289da;
+    color: white;
+}
+
+.credits{
     position: absolute;
     left: 1px;
     bottom: 1px;
