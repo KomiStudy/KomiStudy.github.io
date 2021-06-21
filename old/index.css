@@ -24,3 +24,9 @@ body{
     background-color: #7289da;
     color: white;
 }
+
+
+main{
+    position: relative;
+    right: 20%;
+}
