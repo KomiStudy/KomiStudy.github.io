@@ -30,7 +30,7 @@ body{
 
 
 .card{
-    width: 350px;
+    width: 300px;
     background-color: #2c2f33;
     color: #ffffff;
     transition: transform 0.25s, box-shadow 0.25s;
