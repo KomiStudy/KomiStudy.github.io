@@ -4,10 +4,12 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
+@import 'libs/fixed-grid';
 @import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900');
 
 /*
-	Hyperspace by HTML5 UP
+	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -15,13 +17,27 @@
 // Breakpoints.
 
 	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  )
+		default:   (1681px,   null     ),
+		xlarge:    (1281px,   1680px   ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
+		small:     (481px,    736px    ),
+		xsmall:    (361px,    480px    ),
+		xxsmall:   (null,     360px    )
 	));
+
+// Mixins.
+
+	@mixin color($p) {
+		@include color-typography($p);
+		@include color-box($p);
+		@include color-button($p);
+		@include color-form($p);
+		@include color-list($p);
+		@include color-section($p);
+		@include color-table($p);
+		@include color-pagination($p);
+	}
 
 // Base.
 
@@ -34,25 +50,22 @@
 	@import 'components/row';
 	@import 'components/box';
 	@import 'components/button';
-	@import 'components/features';
 	@import 'components/form';
 	@import 'components/icon';
 	@import 'components/image';
-	@import 'components/list';
 	@import 'components/actions';
-	@import 'components/contact';
 	@import 'components/icons';
-	@import 'components/menu';
+	@import 'components/list';
 	@import 'components/section';
-	@import 'components/split';
-	@import 'components/spotlights';
 	@import 'components/table';
-	@import 'components/wrapper';
+	@import 'components/pagination';
 
 // Layout.
 
-	@import 'layout/header';
 	@import 'layout/wrapper';
-	@import 'layout/footer';
-	@import 'layout/sidebar';
 	@import 'layout/intro';
+	@import 'layout/header';
+	@import 'layout/nav';
+	@import 'layout/main';
+	@import 'layout/footer';
+	@import 'layout/navPanel';

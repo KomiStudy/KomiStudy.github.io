@@ -4,53 +4,42 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
+@import 'libs/fixed-grid';
+@import 'font-awesome.min.css';
 
 /*
-	Hyperspace by HTML5 UP
+	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Spotlights */
-
-	.spotlights {
-		> section {
-			> .image {
-				&:before {
-					opacity: 0 !important;
-				}
-			}
-
-			> .content {
-				> .inner {
-					@include vendor('transform', 'none !important');
-					opacity: 1 !important;
-				}
-			}
-		}
-	}
-
 /* Wrapper */
 
-	.wrapper {
-		> .inner {
-			opacity: 1 !important;
-			@include vendor('transform', 'none !important');
+	#wrapper {
+		background-color:		_palette(wrapper-bg);
+		background-image:		url('../../images/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url('../../images/bg.jpg');
+		background-size:		auto,								auto,														100% auto;
+		background-position:	center,								center,														top center;
+		background-repeat:		repeat,								no-repeat,													no-repeat;
+		background-attachment:	fixed,								fixed,														fixed;
+
+		&.fade-in {
+			&:before {
+				display: none;
+			}
 		}
 	}
 
-/* Sidebar */
+/* Intro */
 
-	#sidebar {
-		> .inner {
-			opacity: 1 !important;
-		}
+	#intro {
+		body.is-preload & {
+			opacity: 1;
 
-		nav {
-			> ul {
-				> li {
-					@include vendor('transform', 'none !important');
-					opacity: 1 !important;
+			&:not(.hidden) {
+				& + #header + #nav {
+					@include vendor('transform', 'none');
+					opacity: 1;
 				}
 			}
 		}
