@@ -11,3 +11,11 @@ body{
     -ms-interpolation-mode: bicubic;
     background-attachment:fixed;
 }
+
+.credits a{
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    color: white;
+    font-size: smaller;
+}
