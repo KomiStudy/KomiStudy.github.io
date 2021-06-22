@@ -113,7 +113,7 @@ header h4,h1{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .nav_links {
         width: 100%;
         display: flex;
