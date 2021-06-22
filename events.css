@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{   
+    background-image: url("media/event_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-interpolation-mode: bicubic;
+    background-attachment:fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+header h1 a:hover {
+    color: rgb(255, 238, 0);
+}
+
+.nav_links {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button {
+    background-color: rgb(245, 30, 102);
+    border: none;
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+    transition: 1s;
+    padding: 5px 8px 5px 8px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(245, 30, 191)
+}
+
+content h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 238, 0);
+}
+
+@media (max-width: 869px) {
+    content h1 {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 238, 0);
+        margin-top: 30px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        align-content: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    }
+
+}
