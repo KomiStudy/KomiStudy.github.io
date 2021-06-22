@@ -5,7 +5,14 @@
     padding: 1px;
 }
 
-body{
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left;
+}
+
+body{   
     background-image: url("media/komi_bg.png");
     background-position: right;
     background-repeat: no-repeat;
@@ -14,25 +21,41 @@ body{
     background-attachment:fixed;
 }
 
-.header{
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: left;
+}
+
+.header .heading h1 a{
     color: black;
     text-decoration: none;
-    font-size: larger;
+    font-size: 40px;
     font-weight: bolder;
     font-family: 'Poppins', sans-serif;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    width: 100%;
 }
-.header:hover{
-    color: black;
-}
+
 
 .nav_links {
-    list-style: none;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: flex-start;
+    justify-content: space-between;
 }
 
-.nav_links li {
-    display: inline-block;
-    text-decoration: none;
-}
 
 .button {
     background-color: rgb(31, 84, 228, 1);
@@ -41,7 +64,7 @@ body{
     border: none;
     border-radius: 8px;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     transition: 1s;
@@ -57,14 +80,65 @@ body{
     color: white;
 }
 
+.card_container {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .card{
     width: 300px;
     background-color: #2c2f33;
     color: #ffffff;
     transition: transform 0.25s, box-shadow 0.25s;
+    margin-top: 10px;
 }
 .card:hover{
     box-shadow: 0px 0px 10px black;
     transform: scale(1.005);
     z-index: 1;
 }
+
+
+@media (max-width: 600px) {
+    .nav_links {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header .heading h1 a{
+        color: black;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: 'Poppins', sans-serif;
+        padding: 20px 30px 20px 30px;
+        text-align: center;
+        width: 100%;
+        align-content: center;
+        background-color: rgb(236, 227, 189);
+        border-radius: 10px;
+    }
+
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-content: left;
+    }
+}   
+
