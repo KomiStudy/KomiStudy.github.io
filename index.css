@@ -115,7 +115,7 @@ header h4,h1{
 
 @media (max-width: 869px) {
     .nav_links {
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -125,6 +125,7 @@ header h4,h1{
 
     header h1, h4, a{
         color: whitesmoke !important;
+        text-shadow: 2px 2px gray;
     }
 
     header .heading h1{
