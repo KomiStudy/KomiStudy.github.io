@@ -58,7 +58,7 @@ body{
 
 
 .button {
-    background-color: rgb(31, 84, 228, 1);
+    background-color: #7289da;
     text-decoration: none;
     padding: 15px 20px 15px 20px;
     border: none;
@@ -67,7 +67,7 @@ body{
     font-size: 15px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .nav_links li a {
@@ -76,7 +76,7 @@ body{
 
 .button:hover {
     cursor: pointer;
-    background-color: rgba(230, 27, 78, 0.7);
+    background-color: #2c2f33ee;
     color: white;
 }
 
