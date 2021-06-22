@@ -123,8 +123,12 @@ header h4,h1{
         justify-content: center;
     }
 
+    header h1, h4{
+        color: whitesmoke;
+    }
+
     header .heading h1{
-        color: black;
+        color: whitesmoke;
         text-decoration: none;
         font-size: 40px;
         font-weight: bolder;
@@ -133,8 +137,6 @@ header h4,h1{
         text-align: left;
         width: 100%;
         align-content: center;
-        
-        border-radius: 10px;
     }
 
     
@@ -154,12 +156,14 @@ header h4,h1{
         justify-content: center;
         align-content: center;
         text-align: center;
+        border-radius: 10px;
     }
 
     .heading{
         width: 100%;
         background-color: #2c2f3369;
-        
+        border-radius: 15px;
+        margin-bottom: 10px;
     }
 }   
 
