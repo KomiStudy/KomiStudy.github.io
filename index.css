@@ -112,6 +112,16 @@ header h4,h1{
     z-index: 1;
 }
 
+footer a{
+    text-decoration: none;
+    color: indigo;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
 
 @media (max-width: 869px) {
     .nav_links {
