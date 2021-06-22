@@ -125,6 +125,7 @@ header h4,h1{
 
     header h1, h4, a{
         color: whitesmoke !important;
+        text-shadow: 2px 2px gray;
     }
 
     header .heading h1{
