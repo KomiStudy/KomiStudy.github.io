@@ -123,8 +123,8 @@ header h4,h1{
         justify-content: center;
     }
 
-    header h1, h4{
-        color: whitesmoke;
+    header h1, h4, a{
+        color: whitesmoke !important;
     }
 
     header .heading h1{
