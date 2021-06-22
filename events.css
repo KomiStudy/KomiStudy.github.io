@@ -7,8 +7,8 @@
 }
 
 body{   
-    background-image: url("media/event_bg.jpg");
-    background-position: center;
+    background-image: url("media/komi.png");
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     -ms-interpolation-mode: bicubic;
@@ -26,10 +26,11 @@ header h1 a {
     text-decoration: none;
     color: whitesmoke;
     transition: 1s;
+    text-shadow: 2px 2px gray;
 }
 
 header h1 a:hover {
-    color: rgb(255, 238, 0);
+    color: #aaaaaa;
 }
 
 .nav_links {
@@ -46,7 +47,7 @@ header h1 a:hover {
 }
 
 .button {
-    background-color: rgb(245, 30, 102);
+    background-color: #7289da;
     border: none;
     border-radius: 5px;
     margin: 0px 5px 0px 5px;
@@ -56,19 +57,21 @@ header h1 a:hover {
 
 .button:hover{
     cursor: pointer;
-    background-color: rgb(245, 30, 191)
+    background-color: #2c2f33;
 }
 
 content h1 {
     text-align: center;
     font-size: 50px;
-    color: rgb(255, 238, 0);
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px black;
 }
 
 
 footer a{
     text-decoration: none;
-    color: rgb(255, 238, 0);
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-size: small;
     text-align: center;
@@ -78,6 +81,7 @@ footer {
     position: absolute;
     bottom: 0px;
     text-align: center;
+    color: white;
 }
 
 footer a:hover {
@@ -88,11 +92,19 @@ footer a:hover {
     content h1 {
         text-align: center;
         font-size: 30px;
-        color: rgb(255, 238, 0);
         margin-top: 0px;
     }
 
+    footer{
+        color: black;
+    }
+    footer a{
+        color:black;
+    }
+
     header {
+        background-color: #18181842;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
