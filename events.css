@@ -7,8 +7,8 @@
 }
 
 body{   
-    background-image: url("media/komi.png");
-    background-position: center top;
+    background-image: url("media/komi_new.png");
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     -ms-interpolation-mode: bicubic;
@@ -26,11 +26,10 @@ header h1 a {
     text-decoration: none;
     color: whitesmoke;
     transition: 1s;
-    text-shadow: 2px 2px gray;
 }
 
 header h1 a:hover {
-    color: #aaaaaa;
+    color: #f6e81d;
 }
 
 .nav_links {
@@ -53,6 +52,7 @@ header h1 a:hover {
     margin: 0px 5px 0px 5px;
     transition: 1s;
     padding: 5px 8px 5px 8px;
+    box-shadow: 3px 4px #3b3b3b;
 }
 
 .button:hover{
@@ -66,6 +66,7 @@ content h1 {
     color: white;
     font-weight: bolder;
     text-shadow: 0px 0px 5px black;
+    margin-top: 0;
 }
 
 
@@ -75,6 +76,7 @@ footer a{
     font-family: 'Poppins', sans-serif;
     font-size: small;
     text-align: center;
+    text-shadow: 0px 0px 5px black;
 }
 
 footer {
@@ -93,23 +95,31 @@ footer a:hover {
         text-align: center;
         font-size: 30px;
         margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    content{
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 0;
     }
 
     footer{
         color: black;
     }
     footer a{
-        color:black;
+        color:rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
     }
 
     header {
-        background-color: #18181842;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 20px;
         align-content: center;
+        margin-bottom: 0;
     }
 
     header h1 {
